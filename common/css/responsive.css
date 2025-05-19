@@ -1,0 +1,473 @@
+@charset "utf-8";
+@media screen and (max-width: 640px) {
+    body {
+        font-size: 4.375vw;
+    }
+    body.open {
+        overflow: hidden;
+    }
+    .sp_hide {
+        display: none!important;
+    }
+    .pc_hide {
+        display: block;
+    }
+/*****************************************
+			container
+*****************************************/
+    #container {
+        min-width: 100%;
+    }
+/*****************************************
+			header
+*****************************************/
+    #header {
+        min-width: 100%;
+    }
+    #headerBox {
+        border-bottom: 0.625vw solid #CCC;
+    }
+    #headerInner {
+        width: auto;
+        padding: 3.125vw;
+    }
+    #logoTitle {
+        width: 52.5vw;
+        height: 17.5vw;
+    }
+    #logoTitle a {
+        background-size: 100% auto;
+    }
+/*****************************************
+				Wrapper
+*****************************************/
+    #wrapper {
+        padding: 0;
+    }
+/*****************************************
+			Topicpath
+*****************************************/
+    #topicpath {
+        width: auto;
+        margin: 0 0 2.5vw 0;
+        padding: 0.9375vw;
+        border-bottom: 0.625vw solid #CCC;
+        overflow: hidden;
+    }
+    .current {
+        width: 27vw;
+        line-height: 7.8125vw;
+        margin: 0 2vw 0 0;
+        padding: 0;
+        text-align: center;
+        font-size: 87.5%;
+        float: left;
+    }
+    #topicpath ol {
+        display: block;
+        white-space: nowrap;
+        overflow-x: scroll;
+        -webkit-overflow-scrolling: touch;
+    }
+    #topicpath ol li {
+        margin: 0 2.5vw 0 0;
+        line-height: 7.8125vw;
+        font-size: 89%;
+    }
+    #topicpath ol li a {
+        display: inline-block;
+        padding: 0 2.5vw 0 0;
+    }
+/*****************************************
+				Main
+*****************************************/
+    #main {
+        padding: 0 0 0 0;
+    }
+/*****************************************
+			gNav
+*****************************************/
+    #navToggle {
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 2001;
+        width: 23.75vw;
+        height: 23.75vw;
+        padding: 5vw 5.9375vw 5.625vw 5.9375vw;
+        background: #E6C0BD;
+        box-sizing: border-box;
+        transition: all 0.3s ease 0s;
+        color: #FFF;
+        cursor: pointer;
+    }
+    #navToggle div {
+        position: relative;
+        width: 11.875vw;
+    }
+    #navToggle div span {
+        position: absolute;
+        width: 100%;
+        height: 0.625vw;
+        background: #FFF;
+        transition: transform 0.6s ease-in-out, top 0.5s ease;
+    }
+    #navToggle div span:nth-child(1) {
+        top: 0;
+    }
+    #navToggle div span:nth-child(2) {
+        top: 3.875vw;
+    }
+    #navToggle div span:nth-child(3) {
+        top: 7.75vw;
+    }
+    #navToggle div span:nth-child(4) {
+        background: none;
+        font-size: 94%;
+        top: 10vw;
+        left: -0.3125vw;
+    }
+    .open #navToggle div span:nth-child(1) {
+        top: 6.25vw;
+        transform: rotate(45deg);
+    }
+    .open #navToggle div span:nth-child(2) {
+        display: none;
+    }
+    .open #navToggle div span:nth-child(3) {
+        top: 6.25vw;
+        transform: rotate(-45deg);
+    }
+    .open #navToggle div span:nth-child(4) {
+        display: none;
+    }
+    #menuBox {
+        visibility: hidden;
+        opacity: 0;
+        z-index: 2000;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgba(249, 232, 235, 1);
+        color: #333;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow-y: scroll;
+    }
+    .open #menuBox {
+        visibility: visible;
+        opacity: 1;
+    }
+    #menuBox ul {
+        list-style: none;
+        width: 80%;
+        scrollbar-width: none;
+    }
+    #menuBox ul li a {
+        display: block;
+        padding: 3.75vw 0 3.75vw 3.125vw;
+        text-decoration: none;
+        color: #333;
+        font-size: 4vw;
+        background: url(../img/parts/arw_bk.png) 98% 50%/ 6.25vw auto no-repeat ;
+        border-bottom: 0.3125vw solid #000;
+    }
+/*****************************************
+			Page Title
+*****************************************/
+    #pageTitle {
+        width: auto;
+        margin: 0 1.25vw 3.75vw 1.25vw;
+        padding: 0;
+    }
+    #pageTitle .innerTitle {
+        padding: 1.875vw 1.25vw 1.875vw 3.125vw;
+    }
+/*****************************************
+				Contents
+*****************************************/
+    #contents {
+        width: 92%;
+        margin: 0 auto 5vw auto;
+        padding: 0;
+    }
+    #contents ul li {
+        margin: 0 0 1.625vw 0;
+        background: url(../img/parts/point_blue.png) 1.1em 1.5625vw/ 3.75vw auto no-repeat;
+        padding: 0 0 0 2.5em;
+    }
+    #contents ul li ul li,
+    .contentsCalendar ul li ul li,
+    #contents ol li ul li,
+    .contentsCalendar ol li ul li {
+        background: url(../img/parts/list_point02.png) 1.6em 2.1875vw/1.25vw auto no-repeat;
+        padding: 0 0 0 2.5em;
+    }
+/*****************************************
+			Contents Title
+*****************************************/
+    #contents h2,
+    .contentsCalendar h2,
+    .contentsWysiwyg h2 {
+        margin: 4.6875vw 0 0.275vw 0;
+        padding: 1.875vw;
+        font-size: 125%;
+        border-width: 0.625vw;
+    }
+    #contents h3,
+    .contentsCalendar h3,
+    .contentsWysiwyg h3 {
+        margin: 4.6875vw 0 0.275vw 0;;
+        padding: 1.875vw 1.875vw 0.9375vw 1.875vw;
+        font-size: 113%;
+        border-width: 0.625vw;
+    }
+    #contents h4,
+    .contentsCalendar h4,
+    .contentsWysiwyg h4 {
+        margin: 4.6875vw 0 0.275vw 0;;
+        padding: 1.25vw 2.5vw;
+        font-size: 106%;
+    }
+    #contents h5,
+    .contentsCalendar h5,
+    .contentsWysiwyg h5 {
+        margin: 4.6875vw 0 0.275vw 0;;
+        padding: 0 2.5vw;
+        border-bottom: 0.625vw dashed #AAA;
+        font-size: 106%;
+    }
+    #contents h6,
+    .contentsCalendar h6,
+    .contentsWysiwyg h6 {
+        margin: 4.6875vw 0 0.275vw 0;;
+        padding: 0 2.5vw;
+        border-bottom: 0.625vw dotted #AAA;
+        font-size: 106%;
+    }
+    #contents p,
+    #contents ul,
+    #contents ol,
+    #contents table,
+    .contentsCalendar p,
+    .contentsCalendar ul,
+    .contentsCalendar ol,
+    .contentsCalendar table {
+        margin: 0 0 5vw 0;
+    }
+/*****************************************
+			OptionGroup
+*****************************************/
+    .optionGroup {
+        padding: 2.5vw 2%;
+        border-top: 0.3124vw solid #DDD;
+        border-bottom: 0.3124vw solid #DDD;
+    }
+    .optionGroupInner {
+        width: 100%;
+    }
+    .faqCollection,
+    .relPage {
+        margin: 6.25vw auto;
+    }
+    .faqCollection h2,
+    .relPage h2 {
+        padding: 1.875vw 1.875vw 1.875vw 3.125vw;
+        line-height: normal;
+        font-size: 110%;
+        border-radius: 0;
+    }
+    .faqCollection .inner,
+    .relPage .inner {
+        padding: 2.5vw 1.25vw 0 1.25vw;
+        font-size: 90%;
+    }
+    .faqCollection .inner h3,
+    .relPage .inner h3 {
+        margin: 0 0 1.5625vw 0;
+    }
+    .faqCollection .inner ul,
+    .relPage .inner ul {
+        margin: 0 0 3.125vw 0;
+        border-bottom: none;
+    }
+    .faqCollection .inner ul li,
+    .relPage .inner ul li {
+        margin: 0 0 1.5625vw 0;
+        padding: 0 1.5625vw 1.5625vw 7.5vw;
+        background: url(../img/parts/point_blue.png) 1.25vw 1.25vw no-repeat;
+        background-size: 3.75vw auto;
+        border-bottom: dotted 0.3125vw #999;
+    }
+    .faqCollection .inner ul li:last-child,
+    .relPage .inner ul li:last-child  {
+        margin-bottom: 0;
+    }
+    .faqCollection .inner .btn_more {
+        background: url(../img/parts/point_skyblue.png) calc(100% - 2.5vw) 50%/ 3.75vw auto no-repeat #FFF;
+        margin: 1.5625vw 0 0 0;
+        padding: 0 10vw 0 5vw;
+        font-size: 90%;
+        border: 0.625vw solid #0340AB;
+        border-radius: 100vw;
+    }
+/*****************************************
+			Page Information
+*****************************************/
+    #pageInfo {
+        margin: 0;
+        padding: 3.75vw 2.5vw;
+        background: #EBF0F3;
+    }
+    #pageInfoInner {
+        width: auto;
+        padding: 0;
+    }
+    #pageInfo ul {
+        text-align: left;
+    }
+    #pageInfo ul li {
+        display: block;
+        margin: 0;
+    }
+/*****************************************
+				Page Top
+*****************************************/
+    #pageTop {
+        right: 3.125vw;
+        bottom: 3.125vw;
+    }
+    #pageTop a {
+        width: 15vw;
+        height: 15vw;
+        border: 0.3125vw solid #FFF;
+        background-size: 5vw auto;
+    }
+/*****************************************
+			Local Navigation
+*****************************************/
+    #lNav {
+        width: 94%;
+        margin: 7.5vw auto;
+        border-radius: 0;
+    }
+    #lNav h2 {
+        margin: 0;
+        padding: 2.5vw;
+        font-size: 114%;
+    }
+    #lNav ul {
+        padding: 0 2% 1.875vw 2%;
+    }
+    #lNav ul li {
+        display: block;
+        margin: 1.25vw 0 0 0;
+        width: auto;
+    }
+    #lNav ul li a {
+        background: url(../img/parts/list_point01.png) 2.5vw 3.4375vw no-repeat #FFF;
+        background-size: 5vw auto;
+        padding: 2.5vw 3.75vw 2.5vw 8.75vw;
+    }
+    #lNav ul li.iconFolder a {
+        background: url(../img/parts/icon_folder.png) 1.5625vw 2.8125vw no-repeat #FFF;
+        background-size: 6.25vw auto;
+    }
+    #lNav ul li.iconPage a {
+        background: url(../img/parts/icon_page.png) 1.5625vw 2.8125vw no-repeat #FFF;
+        background-size: 6.25vw auto;
+    }
+/*****************************************
+			footer
+*****************************************/
+    #footer {
+        min-width: 100%;
+        min-height: auto;
+        margin: 0;
+    }
+    #footerLink {
+        padding: 5vw 0;
+    }
+    #footerLink ul {
+        width: auto;
+        text-align: center;
+    }
+    #footerLink ul li {
+        display: block;
+        width: 85vw;
+        margin: 5vw auto!important;
+    }
+    #footerLink ul li a {
+        padding: 5vw 5vw 5vw 22.5vw;
+        text-align: left;
+        box-shadow: 0.625vw 0.625vw 0 0.3125vw #E5C1CD;
+    }
+    #footerLink ul li:nth-of-type(1) a {
+        background: url(../img/footer/footer_link01.png) 6.25vw 50%/ auto 8.75vw no-repeat;
+    }
+    #footerLink ul li:nth-of-type(2) a {
+        background: url(../img/footer/footer_link02.png) 6.25vw 50%/ auto 10vw no-repeat;
+    }
+    #footerLink ul li:nth-of-type(3) a {
+        background: url(../img/footer/footer_link03.png) 5.25vw 50%/ auto 8.4375vw no-repeat;
+    }
+/*****************************************
+			footerInner
+*****************************************/
+    #footerInner {
+        width: auto;
+        margin:  5vw auto;
+    }
+    #footerContents {
+        float: none;
+        width: 92%;
+        margin: 0 4%;
+    }
+    #footerLogoTitle {
+        display: block;
+        width: 60vw;
+        height: 18.4375vw;
+    }
+    #footerLogoTitle a {
+        background: url(../img/header/logo_title.png) 0 0/ 100% auto no-repeat;
+    }
+    #footerInfo {
+        display: block;
+        padding: 0;
+        margin: 0;
+        border: none;
+    }
+    #footerInfo h3 {
+        margin: 5vw 0 0 0;
+        font-size: 175%;
+    }
+    #footerInfo .footerAddress,
+    #footerInfo .fotterPhone {
+        margin: 2.5vw 0;
+    }
+    #footerInfo .fotterPhone p {
+        margin: 0 0 0 -2.1875vw;
+    }
+    #footerCityLogo {
+        float: none;
+        display: block;
+        width: 60vw;
+        height: 22.5vw;
+        background: url(../img/footer/btn_city.png) 0 0/ 100% auto no-repeat;
+        padding: 0;
+        margin: 5vw auto 0 auto;
+    }
+/*****************************************
+			copyright
+*****************************************/
+    #copyright {
+        color: #000;
+        font-size: 75%;
+        background-color: transparent;
+        padding: 2.5vw 0 2.5vw 0;
+        border-top: 0.625vw solid #bbb;
+    }
+}

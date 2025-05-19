@@ -1,0 +1,525 @@
+@charset "utf-8";
+
+/*****************************************
+			Global Setting
+*****************************************/
+html {
+	color: #333;
+	height: 100%;
+}
+body {
+	font-size: 100%;
+	font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
+	line-height: 1.61;
+	height: 100%;
+}
+/* Link */
+a:link { color: #009; }
+a:visited { color: #606; }
+a:hover { color: #C03; }
+a:active { color: #F00; }
+/* Update Icon */
+.i_new {
+	margin: 0 0 0 10px;
+	font-weight: bold;
+	color: #C00;
+	display: inline-block;
+	vertical-align: top;
+}
+.i_ess {
+	margin: 0 0 0 10px;
+	font-weight: bold;
+	color: #060;
+	display: inline-block;
+	vertical-align: top;
+}
+.i_urg {
+	margin: 0 0 0 10px;
+	font-weight: bold;
+	color: #006;
+	display: inline-block;
+	vertical-align: top;
+}
+/* Font Size */
+.fs_xsmall { font-size: 71%; }
+.fs_small { font-size: 86%; }
+.fs_medium { font-size: 100%; }
+.fs_large { font-size: 129%; }
+.fs_xlarge { font-size: 171%; }
+.fs_xxlarge { font-size: 214%; }
+/* Image Rollover Opacity */
+a:hover img {
+	filter: alpha(opacity=70);
+	-moz-opacity: 0.7;
+	opacity: 0.7;
+}
+/* Hide Element */
+.hide {
+	display: none;
+}
+/*****************************************
+	WYSIWYG Contents Inner Elements
+*****************************************/
+#contents {
+	word-break: break-word;
+}
+#contents p,
+#contents ul,
+#contents ol,
+#contents table,
+.contentsCalendar p,
+.contentsCalendar ul,
+.contentsCalendar ol,
+.contentsCalendar table,
+.contentsWysiwyg p,
+.contentsWysiwyg ul,
+.contentsWysiwyg ol,
+.contentsWysiwyg table {
+	margin: 0 0 25px 0;
+}
+#contents ul,
+.contentsCalendar ul,
+.contentsWysiwyg ul {
+	list-style: none;
+}
+#contents ul li,
+.contentsCalendar ul li,
+.contentsWysiwyg ul li {
+	margin: 0 0 5px 0;
+	background: url("../img/parts/point_blue.png") 19px 6px no-repeat;
+	padding: 2px 0 2px 2.5em;
+}
+#contents ul li:last-of-type,
+.contentsCalendar ul li:last-of-type,
+.contentsWysiwyg ul li:last-of-type {
+	margin: 0;
+}
+#contents ol,
+.contentsCalendar ol,
+.contentsWysiwyg ol {
+	padding: 0 0 0 2.5em;
+}
+#contents ol li,
+.contentsCalendar ol li,
+.contentsWysiwyg ol li {
+	margin: 0 0 5px 0;
+}
+#contents ol li:last-of-type,
+.contentsCalendar ol li:last-of-type,
+.contentsWysiwyg ol li:last-of-type {
+	margin: 0;
+}
+#contents ul li ul,
+.contentsCalendar ul li ul,
+.contentsWysiwyg ul li ul,
+#contents ol li ul,
+.contentsCalendar ol li ul,
+.contentsWysiwyg ol li ul,
+#contents ul li ol,
+.contentsCalendar ul li ol,
+.contentsWysiwyg ul li ol,
+#contents ol li ol,
+.contentsCalendar ol li ol,
+.contentsWysiwyg ol li ol {
+	margin-bottom: 0;
+}
+#contents ul li ul li,
+.contentsCalendar ul li ul li,
+.contentsWysiwyg ul li ul li,
+#contents ol li ul li,
+.contentsCalendar ol li ul li,
+.contentsWysiwyg ol li ul li {
+	background: url(../img/parts/list_point02.png) 1.4em 9px no-repeat;
+	padding: 0 0 0 2em;
+}
+#contents ul li ol li,
+.contentsCalendar ul li ol li,
+.contentsWysiwyg ul li ol li {
+	background: none;
+	padding: 0;
+}
+#contents table caption,
+.contentsCalendar table caption,
+.contentsWysiwyg table caption {
+	padding: 8px 0;
+	font-weight: bold;
+}
+#contents table th,
+#contents table td,
+.contentsCalendar table th,
+.contentsCalendar table td,
+.contentsWysiwyg table th,
+.contentsWysiwyg table td {
+	padding: 8px;
+	border: solid 1px #999;
+}
+#contents table th,
+.contentsCalendar table th,
+.contentsWysiwyg table th {
+	background: #F1F6FF;
+}
+#contents table td p:last-of-type,
+#contents table td ul:last-of-type,
+#contents table td ol:last-of-type,
+.contentsCalendar table td p:last-of-type,
+.contentsCalendar table td ul:last-of-type,
+.contentsCalendar table td ol:last-of-type,
+.contentsWysiwyg table td p:last-of-type,
+.contentsWysiwyg table td ul:last-of-type,
+.contentsWysiwyg table td ol:last-of-type {
+	margin-bottom: 0;
+}
+#contents table.base_table th,
+#contents table.base_table td,
+.contentsCalendar table.base_table th,
+.contentsCalendar table.base_table td,
+.contentsWysiwyg table.base_table th,
+.contentsWysiwyg table.base_table td {
+	padding: 5px !important;
+	border: solid 1px #999 !important;
+}
+#contents table.table_layout th,
+#contents table.table_layout td,
+.contentsCalendar table.table_layout th,
+.contentsCalendar table.table_layout td,
+.contentsWysiwyg table.table_layout th,
+.contentsWysiwyg table.table_layout td {
+	border: none;
+	padding: 0;
+}
+#contents img,
+.contentsCalendar img,
+.contentsWysiwyg img {
+	max-width: 100%;
+	height: auto;
+}
+#contents ul li ul li,
+.contentsCalendar ul li ul li,
+#contents ol li ul li,
+.contentsCalendar ol li ul li {
+	background: url(../img/parts/list_point02.png) 1.3em 9px no-repeat;
+	padding: 0 0 0 2em;
+}
+/*****************************************
+		Access Google Map Button
+*****************************************/
+#btnAccessGMap {
+	margin: 0 0 10px 0;
+	text-align: right;
+}
+#btnAccessGMap a {
+	padding: 5px;
+	display: inline-block;
+	background: #F7F7F7;
+	border: solid 2px #CCC;
+}
+/*****************************************
+		Google Map Embed
+*****************************************/
+#gmap_embed {
+	margin: 0 auto 25px auto;
+	height: 400px;
+	border: solid 1px #CCC;
+}
+/*****************************************
+			Video Embed
+*****************************************/
+/* Video Responsive */
+.video_embed {
+	margin: 25px 0;
+    padding-top: 56.25%;
+    width: auto;
+    height: 0;
+    position: relative;
+	text-align: center;
+}
+.video_embed iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/* for USTREAM */
+.video_embed a {
+	margin: 0 auto;
+}
+/*****************************************
+		Map Link Button
+*****************************************/
+.linkMapBox {
+	width: 1070px;
+	margin: 25px auto;
+	padding: 12px;
+	background: #FFF;
+	border: solid 3px #CCC;
+}
+.linkMapBox .linkMapDesc {
+	font-size: 114%;
+	font-weight: bold;
+}
+.mapOverview {
+	padding: 12px 15px;
+	border-top: dotted 1px #CCC;
+	overflow: hidden;
+}
+.linkMapBox .mapOverview {
+	margin: 5px 0 0 0;
+	padding: 12px 0 0 0;
+}
+.mapOverview p,
+.mapOverview ul,
+.mapOverview ol,
+.mapOverview table {
+	margin: 0 0 10px 0;
+}
+.mapOverview caption {
+	margin: 0 0 5px 0 !important;
+	font-weight: bold;
+}
+.mapOverview ul { list-style: none; }
+.mapOverview ul li {
+	background: url(../img/parts/list_point02.png) 18px 8px no-repeat;
+	padding: 4px 0 4px 2.5em;
+}
+.mapOverview ol {
+	padding: 0 0 0 2.5em;
+}
+.mapOverview table th,
+.mapOverview table td {
+	padding: 5px;
+	border: solid 1px #999;
+}
+.mapOverview table.base_table th,
+.mapOverview table.base_table td {
+	padding: 5px !important;
+	border: solid 1px #999 !important;
+}
+.mapOverview table.table_layout th,
+.mapOverview table.table_layout td {
+	border: none;
+	padding: 0;
+}
+.mapOverview table th { background-color: #F3F3F3; }
+.mapOverviewImage {
+	margin: 0 10px 0 0;
+	width: 25%;
+	float: left;
+}
+.mapOverviewImage a {
+	display: inline !important;
+	padding: 0 !important;
+	border-left: none !important;
+}
+.mapOverviewImage img {
+	max-width: 100% !important;
+	height: auto !important;
+}
+.mapOverviewContents {
+	float: left;
+}
+/*****************************************
+		Map Information Window
+*****************************************/
+.mapInfoWindow {
+	width: 350px;
+	line-height: 1.43;
+	word-break: break-word;
+}
+.mapInfoWindow p,
+.mapInfoWindow ul,
+.mapInfoWindow ol,
+.mapInfoWindow table {
+	margin: 0 0 10px 0;
+}
+.mapInfoWindow caption {
+	margin: 0 0 5px 0 !important;
+	font-weight: bold;
+}
+.mapInfoWindow ul { list-style: none; }
+.mapInfoWindow ul li {
+	background: url(../img/parts/list_point01.png) 12px 5px no-repeat;
+	padding: 4px 0 4px 2.5em;
+}
+.mapInfoWindow ol {
+	padding: 0 0 0 2.5em;
+}
+.mapInfoWindow table th,
+.mapInfoWindow table td {
+	padding: 5px;
+	border: solid 1px #999;
+}
+.mapInfoWindow table.base_table th,
+.mapInfoWindow table.base_table td {
+	padding: 5px !important;
+	border: solid 1px #999 !important;
+}
+.mapInfoWindow table.table_layout th,
+.mapInfoWindow table.table_layout td {
+	border: none;
+	padding: 0;
+}
+.mapInfoWindow table th { background-color: #F3F3F3; }
+.mapInfoWindowTitle {
+	margin: 5px 0 10px 0;
+	padding: 0 0 5px 0;
+	border-bottom: solid 1px #CCC;
+	text-align: center;
+	font-size: 114%;
+	font-weight: bold;
+}
+.mapInfoWindowImage {
+	margin: 0 0 10px 0;
+	text-align: center;
+}
+.mapInfoWindowImage img {
+	max-width: 50% !important;
+	height: auto !important;
+}
+.mapInfoWindowContents {
+	margin: 0 0 10px 0;
+}
+.mapRouteLink {
+	margin: 10px 0 0 0;
+	text-align: center;
+}
+.mapRouteLink a {
+	display: block;
+	padding: 5px 0;
+	background: #000;
+	text-align: center;
+	text-decoration: none;
+	color: #FFF;
+}
+.mapRouteLink a:hover {
+	background: #C03;
+}
+/*****************************************
+			Search Suggest
+*****************************************/
+.ui-autocomplete {
+	background: #FFF;
+	border: solid 1px #CCC;
+}
+.ui-autocomplete .ui-menu-item .ui-corner-all {
+	margin: 0 !important;
+	padding: 4px !important;
+}
+.ui-menu {
+	list-style: none;
+	padding: 2px;
+	margin: 0;
+	display: block;
+	outline: none
+}
+.ui-menu .ui-menu-item a {
+	text-decoration: none;
+	display: block;
+	line-height: 1.5;
+	zoom: 1;
+	font-weight: normal
+}
+.ui-autocomplete .ui-menu-item .ui-state-focus {
+	cursor: pointer;
+	background: #F2F2F2;
+	color: #C03;
+}
+.ui-autocomplete{ 
+	position:absolute;
+	top: 0;
+	left: 0;
+	cursor: default
+}
+* html .ui-autocomplete{ 
+	width: 1px;
+}
+.ui-helper-hidden-accessible {
+	display: none;
+}
+/*****************************************
+			Social Buttons
+*****************************************/
+#social {
+	width: 1000px;
+	margin: 0 auto 5px auto;
+	letter-spacing: -0.4em;
+	text-align: right;
+}
+#social div {
+	letter-spacing: normal;
+	display: inline-block;
+	vertical-align: top;
+}
+#social .LINE {
+	width: 97px;
+	height: 22px;
+}
+#social .LINE a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	text-indent: 100%;
+	overflow: hidden;
+	white-space: nowrap;
+	background: url(../img/parts/btn_LINE.png) 0 0 no-repeat;
+}
+/*****************************************
+			Weblio
+*****************************************/
+#weblio_rws_ah {
+	margin: 25px 0 0 0;
+	padding: 0 2px 0 2px;
+	border: #C0C0C0 solid 1px;
+}
+#weblio_rws_rh p {
+	padding: 1px 0 3px 2px;
+	font-size: 86%;
+}
+#weblio_rws_rh p a { color: #333; }
+/*****************************************
+			SP Link In PC
+*****************************************/
+#viewPC2SP {
+	display: none;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9999999;
+}
+#viewPC2SP a {
+	display: block;
+	padding: 0.5em 0;
+	width: 100%;
+	background-image: linear-gradient(#F9F9F9 40%, #CCCCCC 100%);
+	border-bottom: solid 1px #333;
+	font-size: 4em;
+	font-weight: bold;
+	color: #333;
+	text-align: center;
+	text-decoration: none;
+	text-shadow: 2px 2px 2px #FFF;
+	box-shadow: 2px 2px 3px #333;
+}
+/*****************************************
+		Blank Window Icon
+*****************************************/
+.icon_blank {
+	margin: 0 5px 0 0;
+	padding: 0 17px 0 0;
+	background: url(../img/parts/icon_blank.png) 100% 90% no-repeat;
+}
+/*****************************************
+			rs Player
+*****************************************/
+#rsPlayer {
+	display: none;
+	letter-spacing: normal;
+	position: absolute;
+	top: 95px;
+	left: 22px;
+	z-index: 3000;
+}
+.rsbtn.rsexpanded .rsbtn_exp {
+	display: inline-block !important;
+}

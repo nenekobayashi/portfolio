@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+/*****************************************
+	Import Common CSS File
+*****************************************/
+@import "../../common/css/reset.css";
+@import "../../common/css/global.css";
+@import "../../common/css/option.css";
+/*****************************************
+	Import Common JS Plugin CSS File
+*****************************************/
+@import "../../common/js/colorbox/colorbox.css";
+/*****************************************
+	Import Common Page Base CSS File
+*****************************************/
+@import "../../common/css/base.css";
+/*****************************************
+	Import Common WYSIWYG Layout CSS File
+*****************************************/
+@import "../../common/css/layout.css";
+/*****************************************
+	Import Common Program CSS File
+*****************************************/
+@import "../../common/css/pg.css";
+/*****************************************
+	Import Responsive CSS File
+*****************************************/
+@import "../../common/css/responsive.css";

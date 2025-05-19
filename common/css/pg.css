@@ -1,0 +1,915 @@
+@charset "UTF-8";
+
+/*****************************************
+			Calendar List
+*****************************************/
+#calList {
+	width: 1100px;
+	margin: 10px auto;
+	overflow: hidden;
+	list-style: none;
+	letter-spacing: -0.4em;
+}
+#calList li {
+	background: url(../img/parts/list_point01.png) 6px 7px no-repeat;
+	padding: 2px 8px 2px 28px;
+	margin: 0 5px 5px 0;
+	letter-spacing: normal;
+	display: inline-block;
+	border: solid 2px #CCC;
+}
+#calDesc {
+	width: 1100px;
+	margin: 10px auto;
+	overflow: hidden;
+}
+#calDesc p {
+	margin: 0 0 5px 0;
+}
+#calDesc form input {
+	cursor: pointer;
+}
+#calDesc form span {
+	margin: 0 5px;
+}
+#calYMBox {
+	float: left;
+	line-height: 26px;
+}
+#calChangeBox {
+	float: right;
+}
+#btn_calchange {
+	background: url(../img/parts/btn_cal_change.png) 6px 50% no-repeat;
+	background-color: #0340AB;
+	display: block;
+	padding: 0 0 0 40px;
+	width: 220px;
+	height: 32px;
+	line-height: 32px;
+	border: none;
+	color: #FFF;
+	font-weight: bold;
+	text-align: left;
+	transition: 0.2s;
+}
+#btn_calchange:hover {
+	background-color: #06F;
+}
+.holiday {
+	color: #C34;
+}
+/*****************************************
+			Calendar 
+*****************************************/
+#calendarAll {
+	width: 1098px;
+	margin: 0 auto 20px auto;
+	border: solid 1px #CCC;
+	overflow: hidden;
+}
+#calendarAll dl {
+	margin: -1px 0 0 0;
+	overflow: hidden;
+}
+#calendarAll dl dt {
+	margin: 0 0 -995px 0;
+	padding: 10px 10px 1005px 10px;
+	width: 120px;
+	border-top: dotted 1px #CCC;
+	float: left;
+}
+#calendarAll dl dd {
+	margin: 0 0 -995px 140px;
+	padding: 10px 10px 1005px 10px;
+	border-top: dotted 1px #CCC;
+	border-left: solid 1px #CCC;
+}
+/*****************************************
+			7th Days Calendar
+*****************************************/
+#calendar7th {
+	width: 1100px;
+	margin: 0 auto 20px auto;
+}
+#calendar7th table {
+	background: #FFF;
+	width: 100%;
+	table-layout: fixed;
+	border: solid 1px #CCC;
+}
+#calendar7th table th,
+#calendar7th table td {
+	vertical-align: top;
+	padding: 5px;
+}
+#calendar7th table thead th {
+	background-color: #FFFAE2;
+	text-align: center;
+	border-bottom: solid 1px #CCC;
+	border-left: solid 1px #CCC;
+}
+#calendar7th table tbody td {
+	border-left: solid 1px #CCC;
+	border-bottom: dotted 1px #CCC;
+}
+#calendar7th table tbody td dl dt {
+	width: 3em;
+	text-align: center;
+	display: inline-block;
+	margin: 0 0 5px 0;
+	background: #FFFAE2;
+}
+#calendar7th table tbody td.sun dl dt,
+#calendar7th table tbody td.national dl dt {
+	background-color: #FFDFE3;
+}
+#calendar7th table tbody td.sat dl dt {
+	background-color: #ACD5E9;
+}
+/*****************************************
+		Calendar Global Style
+*****************************************/
+#calendarAll dl.sun dt,
+#calendarAll dl.national dt,
+#calendar7th th.sun,
+#calendar7th th.national { background-color: #FFDFE3; }
+#calendarAll dl.sat dt,
+#calendar7th th.sat { background-color: #ACD5E9; }
+#calendarAll dl.today,
+#calendar7th table tbody td.today { background-color: #FFEFCE; }
+#calendarAll dl dd ul,
+#calendar7th table tbody td dl dd ul {
+	margin: 0;
+	padding: 0 !important;
+	list-style: none;
+	overflow: hidden;
+}
+#calendarAll dl dd ul li,
+#calendar7th table tbody td dl dd ul li {
+	margin: -1px 0 5px 0;
+	border-top: dotted 1px #CCC;
+}
+#calendarAll dl dd ul li.list_default,
+#calendar7th table tbody td dl dd ul li.list_default {
+	padding: 5px 5px 0 18px;
+	background: url(../img/parts/list_point02.png) 6px 14px no-repeat;
+}
+#calendarAll dl dd ul li.list_icon,
+#calendar7th table tbody td dl dd ul li.list_icon {
+	padding: 5px 5px 0 18px;
+	text-indent: -18px;
+}
+#calendarAll dl dd ul li.list_icon img,
+#calendar7th table tbody td dl dd ul li.list_icon img {
+	margin: 0 2px 0 0;
+	vertical-align: middle;
+}
+/*****************************************
+			Calendar Detail 
+*****************************************/
+#calText {
+	background: url(../img/parts/list_point01.png) 10px 10px no-repeat #F7F7F7;
+	width: 1100px;
+	margin: 0 auto 20px auto;
+	padding: 6px 2px 4px 34px;
+	border: solid 1px #DDD;
+	box-sizing: border-box;
+}
+.border {
+	height: 0;
+	border: none;
+	border-top: dotted 2px #88F4FF;
+	margin: 35px 0;
+}
+/*****************************************
+			Directory QA
+*****************************************/
+#dirQA ul {
+	letter-spacing: -0.4em;
+}
+#dirQA ul li {
+	display: inline-block;
+	vertical-align: top;
+	letter-spacing: normal;
+	margin-right: 20px;
+}
+/*****************************************
+			List Index Question
+*****************************************/
+#listIndexQA {
+	width: 1100px;
+	margin: 0 auto 20px auto;
+	overflow: hidden;
+	position: relative;
+	z-index: 1000;
+}
+#listIndexQA dl {
+	margin: 0 4px;
+	padding: 5px 0;
+	border-bottom: dotted 1px #999;
+}
+#listIndexQA dl dt {
+	padding: 5px 5px 5px 42px;
+	background: url(../img/faq/icon_q.png) 4px 2px no-repeat;
+}
+#listIndexQA dl dd {
+	padding: 5px 5px 5px 42px;
+	background: url(../img/faq/icon_a.png) 4px 2px no-repeat;
+}
+#listIndexQA ul {
+	margin: 0 4px;
+	padding: 5px 0;
+	list-style: none;
+}
+#listIndexQA ul li {
+	padding: 5px 5px 8px 42px;
+	margin: 5px 0 0 0;
+	background: url(../img/faq/icon_q.png) 4px 2px no-repeat;
+	border-bottom: dotted 1px #999;
+}
+/*****************************************
+			FAQ Detail Page
+*****************************************/
+#faqQ { margin: 0 0 15px 0;}
+#faqQ dt {
+	margin: 0 0 5px 0;
+	padding: 0 0 0 42px;
+	line-height: 40px;
+	border: 2px solid #D2D2D2;
+	color: #000;
+	font-size: 115%;
+	font-weight: bold;
+	background: url(../img/faq/icon_q.png) 5px 5px no-repeat;
+}
+#faqA dt {
+	margin: 15px 0 5px 0;
+	padding: 0 0 0 42px;
+	line-height: 40px;
+	border: 2px solid #D2D2D2;
+	color: #000;
+	font-size: 115%;
+	font-weight: bold;
+	background: url(../img/faq/icon_a.png) 5px 5px no-repeat;
+}
+/*****************************************
+				Mail Form
+*****************************************/
+#mailform dl {
+	margin: -1px 0 0 0;
+	padding: 10px;
+	border: solid 1px #CCC;
+	border-left: solid 3px #CCC;
+	overflow: hidden;
+}
+#mailform dl.req {
+	border-left: solid 3px #D90000;
+}
+#mailform dl dt {
+	width: 30%;
+	float: left;
+}
+#mailform dl dt span {
+	margin: 10px 15px 0 0;
+	padding: 10px;
+	display: block;
+	border: dotted 1px #CCC;
+}
+#mailform dl.req dt strong {
+	margin: 0 0 0 5px;
+	color: #D90000;
+	font-weight: normal;
+}
+#mailform dl dd {
+	width: 70%;
+	float: left;
+}
+#mailform dl dd p {
+	margin: 15px 0 0 0;
+	padding: 10px;
+	border: dotted 1px #CCC;
+}
+#mailform .formItemDesc {
+	display: block;
+	margin: 0 0 10px 0;
+}
+#mailform input,
+#mailform textarea,
+#mailform select {
+	font-size: 100%;
+}
+#mailform input[type="text"],
+#mailform textarea {
+	width: 100%;
+	padding: 8px;
+	box-sizing: border-box;
+	border: 1px solid #666;
+	font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
+}
+#mailform select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background: url(../img/parts/select_arw.png) 100% 50% no-repeat;
+	background-size: 16px auto;
+	background-color: #FFF;
+	color: #333;
+	padding: 5px 22px 5px 8px;
+	box-sizing: border-box;
+	border: none;
+	border: 1px solid #666;
+}
+#mailform input#field_email[type="text"],
+#mailform input#field_email_conf[type="text"] {
+	width: calc(100% - 5em);
+}
+#mailform input:focus,
+#mailform textarea:focus {
+	background: #FFD;
+}
+#mailform dl dd label {
+	margin: 0 10px 0 5px;	
+}
+.mailformSubmitGroup {
+	margin: 15px 0;
+	text-align: center;
+}
+#mailform .fieldgroup span {
+	display: block;
+	margin: 5px 0;
+	position: relative;
+}
+#mailform .fieldgroup span input {
+	position: absolute;
+	top: 0;
+	opacity: 0;
+	width: 100%;
+	height: 100%;
+}
+#mailform .fieldgroup span input[type="checkbox"] + label {
+	display: block;
+	background: url(../img/parts/checkbox_off.png) 0 50% no-repeat;
+	background-size: 14px auto;
+	padding: 0 0 0 18px;
+	font-weight: normal !important;
+}
+#mailform .fieldgroup span input[type="checkbox"]:checked + label {
+	background: url(../img/parts/checkbox_on.png) 0 50% no-repeat;
+	background-size: 14px auto;
+}
+#mailform .fieldgroup span input[type="radio"] + label {
+	display: block;
+	background: url(../img/parts/radio_box_off.png) 0 50% no-repeat;
+	background-size: 14px auto;
+	padding: 0 0 0 18px;
+	font-weight: normal !important;
+}
+#mailform .fieldgroup span input[type="radio"]:checked + label {
+	background: url(../img/parts/radio_box_on.png) 0 50% no-repeat;
+	background-size: 14px auto;
+}
+#mailform .limitBlock {
+	margin: 8px 0 0 0;
+	color: #666;
+}
+input.btnMailformSend, 
+input.btnMailformBack,
+input.btnMailformReset {
+	-webkit-appearance: none;
+	display: block;
+	width: 200px;
+	height: 50px;
+	border: 0;
+	border-radius: 5px;
+	cursor: pointer;
+}
+input.btnMailformSend {
+	margin: 0 auto;
+	background: #C03;
+	border: solid 1px #88F4FF;
+	color: #FFF;
+}
+input.btnMailformSend:hover { background-color: #DC0101; }
+input.btnMailformBack {
+	margin: 0 auto;
+	border: solid 1px #000;
+	background: #333;
+	color: #FFF;
+}
+input.btnMailformBack:hover { background-color: #555; }
+input.btnMailformReset {
+	margin: 15px auto 0 auto;
+	background: #EEE;
+	border: solid 1px #CCC;
+	color: #333;
+}
+input.btnMailformReset:hover { background-color: #DDD; }
+#field_email {
+	margin: 0 0 5px 0;
+}
+/*****************************************
+			Double Check
+*****************************************/
+#checkDouble {
+	width: 90%;
+	margin: 0 auto 35px auto;
+	padding: 22px 0 0 0;
+}
+.checkDoubleInner {
+	background: #FAF7BB;
+	margin: 0 auto 22px auto;
+	padding: 12px;
+}
+.checkDoubleInner p:last-of-type {
+	margin-bottom: 0 !important;
+}
+.checkDoubleInner .emphasis {
+	color: #B20000;
+}
+#checkDoubleForm {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+#checkDoubleForm input {
+	margin: 0 auto 15px auto;
+}
+#checkDoubleForm input[type="text"] {
+	display: flex;
+	align-items: center;
+	box-sizing: border-box;
+	width: 60%;
+	height: 44px;
+	border: 1px solid #CCC;
+}
+#checkDoubleForm input[type="submit"],
+#btnCheckNumber {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: none;
+	border-radius: 3px;
+	box-sizing: border-box;
+	width: 36%;
+	height: 44px;
+	margin: 0 auto;
+	background: #022DA7;
+	color: #FFF;
+	cursor: pointer;
+	transition: 0.2s;
+}
+#checkDoubleForm input[type="submit"]:hover,
+#btnCheckNumber:hover {
+	background: #DC0101;
+}
+/*****************************************
+			Enquete Page
+*****************************************/
+#enqBox {
+	margin: 15px;
+	padding: 20px;
+	background-color: #F7FDFF;
+	border: solid 1px #333;
+	text-align: center;
+}
+#enqBox input[type="text"],
+#enqBox textarea {
+	padding: 8px;
+	box-sizing: border-box;
+	border: none;
+	border: 1px solid #666;
+}
+/*****************************************
+			Google Maps View
+*****************************************/
+#mainMap {
+	width: 1100px;
+	margin: 0 auto 10px auto;
+	overflow: hidden;
+	position: relative;
+	z-index: 1000;
+}
+#mainMap p {
+	margin: 0 0 10px 0;
+}
+#mapCategory {
+	margin: 10px 0 5px 0;
+}
+#mapCategory ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	letter-spacing: -0.4em;
+}
+#mapCategory ul li {
+	background: url(../img/parts/list_point01.png) 9px 6px no-repeat;
+	padding: 2px 8px 2px 33px;
+	margin: 0 5px 5px 0;
+	letter-spacing: normal;
+	display: inline-block;
+	border: solid 2px #CCC;
+}
+#mapList {
+	background-color: #FFF;
+	border: solid 2px #CCC;
+	padding: 5px 10px;
+}
+#mapList ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	letter-spacing: -0.4em;
+}
+#mapList ul li {
+	margin: 0 15px 0 0;
+	padding: 0 0 0 12px;
+	background: url(../img/parts/list_point02.png) 0 50% no-repeat;
+	letter-spacing: normal;
+	display: inline-block;
+}
+#contentsMap {
+	margin: 15px 0 0 0;
+	overflow: hidden;
+}
+#mapCanvas {
+	margin: 0 0 0 10px;
+	padding: 1px;
+	width: 70%;
+	height: 500px;
+	float: right;
+	border: solid 1px #DDD;
+}
+#mapNav {
+	overflow: hidden;
+	line-height: 1.41;
+}
+#mapNav h2 {
+	line-height: 48px;
+	padding: 0 0 0 8px;
+	background-color: #6FDBE6;
+	border: solid 1px #6FDBE6;
+	font-weight: bold;
+	color: #000;
+}
+#mapNav ul {
+	background: #FFF;
+	margin: 0;
+	padding: 0;
+	max-height: 453px;
+	border-bottom: solid 1px #6FDBE6;
+	list-style: none;
+	overflow: auto;
+}
+#mapNav ul li {
+	margin: 0;
+	padding: 0;
+	border-right: solid 1px #88F4FF;
+	border-top: dotted 1px #88F4FF;
+}
+#mapNav ul li:first-child {
+	border-top: none;
+}
+#mapNav ul li a {
+	display: block;
+	padding: 10px;
+	border-left: solid 5px #6FDBE6;
+	text-decoration: none;
+	color: #000;
+	cursor: pointer;
+}
+#mapNav ul li a:hover {
+	border-left: solid 5px #D00;
+	color: #D00;
+}
+#mapNav ul li.select a {
+	border-left: solid 5px #D00;
+	background-color: #EEE;
+	color: #D00;
+}
+#mapNav ul li.select a:hover {
+	color: #D00;
+}
+/*****************************************
+			Search Page
+*****************************************/
+.searchResponse dt {
+	margin: 0 0 5px 0;
+	padding: 5px 5px 5px 20px;
+	background: url(../img/parts/list_point02.png) 8px 16px no-repeat #F2F2F2;
+	font-size: 121%;
+	overflow: hidden;
+}
+.searchResponse dt .doc_info {
+	margin: 0 0 0 8px;
+	font-size: 71%;
+	vertical-align: text-top;
+}
+.searchResponse dt .doc_info img {
+	margin: 0 5px 0 0;
+	vertical-align: middle;
+}
+.searchResponse dt .update {
+	margin: 4px 8px 0 0;
+	font-size: 71%;
+	float: right;
+}
+.searchResponse dd {
+	margin: 0 0 15px 0;
+	padding: 0 15px;
+}
+.searchResponse dd a {
+	font-size: 93%;
+	color: #268645;
+}
+.searchResponse dd a:hover { color: #C03; }
+.highlight {
+	background-color: #FF0;
+	font-weight: bold;
+}
+.backSearchList {
+	margin: 0 0 15px 0;
+}
+.backSearchList .submit {
+	display: block;
+	margin: 0 auto;
+	width: 50%;
+	padding: 8px;
+	background-color: #0B3A93;
+	border: solid 1px #012345;
+	border-radius: 3px;
+	letter-spacing: normal;
+	font-size: 100%;
+	color: #FFF;
+	text-decoration: underline;
+	cursor: pointer;
+	transition: 0.2s;
+}
+.backSearchList .submit:hover {
+	background: #06F;
+	border-color: #05E;
+}
+#mainGoogle {
+	width: 1100px;
+	margin: 0 auto;
+}
+.gsc-results .gsc-cursor-box .gsc-cursor-page,
+.gsc-results .gsc-cursor-box .gsc-cursor-current-page {
+	color: #666;
+	border-color: #666;
+}
+.gsc-control-cse {
+	padding: 1em 0;
+}
+/*****************************************
+			Section Index
+*****************************************/
+#sectionList {}
+.sectionIndex {
+	margin: 0 0 20px 0;
+	letter-spacing: -0.4em;
+}
+#contents .sectionIndex h2 {
+	margin: 15px -10px 25px -10px;
+	letter-spacing: normal;
+}
+.sectionIndexInner {
+	display: inline-block;
+	vertical-align: top;
+	letter-spacing: normal;
+	width: 510px;
+	margin: 0 15px 20px 0;
+	padding: 2px 10px 10px 10px;
+	border-bottom: 2px dotted #CCC;
+	position: relative;
+}
+.sectionIndexInner:nth-of-type(even) {
+	margin: 0 0 40px 0;
+}
+#contents .sectionIndexInner h3 {
+	background-color: #EEE;
+	margin: 0 -8px 8px -8px;
+	padding: 6px 10px;
+	color: #000;
+	border: none;
+	letter-spacing: normal;
+}
+#contents .sectionIndexInner h3 a {
+	color: #000;
+}
+#contents .sectionIndexInner h3 a:hover {
+	color: #C00;
+}
+#contents .sectionIndexInner p,
+#contents .sectionIndexInner ul,
+#contents .sectionIndexInner ol,
+#contents .sectionIndexInner table {
+	margin: 0 0 10px 0;
+}
+a.sectionPlace {
+	display: inline-block;
+	background-color: #6FDBE6;
+	padding: 6px 12px;
+	line-height: 1;
+	font-size: 93%;
+	font-weight: bold;
+	color: #000;
+	text-decoration: none;
+}
+a.sectionPlace:hover {
+	background: #06F;
+	color: #FFF;
+}
+/*****************************************
+			Error Document
+*****************************************/
+#errorDocumentBox {
+	width: 1100px;
+	margin: 10px auto;
+}
+#errorDocumentBoxInner {
+	padding: 15px;
+	border: solid 2px #DDD;
+}
+/*****************************************
+				Topics
+*****************************************/
+#topicsDetail {
+	overflow: hidden;
+}
+#topicsDetail .date {
+	margin: 0 0 10px 0;
+	text-align: right;
+}
+#topicsDetail .photo {
+	margin: 0 auto;
+	width: 400px;
+	float: left;
+}
+#topicsDetail .photo img {
+	max-width: 100%;
+	height: auto;
+}
+#topicsDetail .sentence {
+	margin: 0 0 0 400px;
+	padding: 5px 10px;
+	font-size: 100%;
+	line-height: 1.41;
+}
+/*****************************************
+			Open Data
+*****************************************/
+#openDataCategory {
+	padding: 10px 0 0 0;
+	letter-spacing: -0.4em;
+}
+.openDataCategoryIndex {
+	width: 160px;
+	margin: 0 0 25px 0;
+	padding: 0 10px;
+	letter-spacing: normal;
+	text-align: center;
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+}
+.openDataIcon {
+	width: 160px;
+	margin: 0 0 8px 0;
+	text-align: center;
+}
+.openDataIcon img {
+	max-width: 100%;
+	height: auto;
+}
+.openDataIcon a:hover {
+	filter: alpha(opacity=50);
+	-moz-opacity: 0.5;
+	opacity: 0.5;
+}
+.openDataCount {
+	width: 160px;
+	line-height: 20px;
+	position: absolute;
+	top: 85px;
+	left: 10px;
+	font-size: 130%;
+	font-weight: bold;
+}
+.openDataText {
+	font-weight: bold;
+}
+.openDataFileExt {
+	display: inline-block;
+	margin: 0 10px 0 0;
+	padding: 8px 12px;
+	background: #039;
+	border-radius: 50px;
+	color: #FFF;
+	font-size: 93%;
+	letter-spacing: 0.1em;
+	text-align: center;
+	line-height: 1;
+}
+.openDataTable01 {
+	width: 100% !important;
+}
+.openDataTable01 th {
+	padding: 8px !important;
+	width: 20% !important;
+	background: #FFC !important;
+	border: solid 1px #999 !important;
+}
+.openDataTable01 td {
+	padding: 8px !important;
+	border: solid 1px #999 !important;
+}
+.openDataTable02 {
+	margin: 10px 0 !important;
+	width: 100% !important;
+}
+.openDataTable02 th {
+	padding: 8px !important;
+	width: 20% !important;
+	background: #EEE !important;
+	border: solid 1px #999 !important;
+}
+.openDataTable02 td {
+	padding: 8px !important;
+	border: solid 1px #999 !important;
+}
+.btnBackHomeOpendata {
+	margin: 15px 0;
+	text-align: right;
+}
+.btnBackHomeOpendata a {
+	display: inline-block;
+	padding: 8px 20px;
+	background-color: #88F4FF;
+	border-radius: 5px;
+	color: #000;
+}
+.btnBackHomeOpendata a:hover {
+	background: #06F;
+	color: #FFF;
+}
+.openDataSerachBox {
+	margin: 20px -10px;
+	padding: 12px 20px;
+	background-color: #0B3A93;
+	border: solid 1px #0B3A93;
+}
+.openDataSerachBox dl {
+}
+.openDataSerachBox dl dt {
+	margin: 0 0 10px 0;
+	padding: 0 0 5px 0;
+	border-bottom: dotted 1px #FFF;
+	font-size: 129%;
+	font-weight: bold;
+	text-align: center;
+	color: #FFF;
+}
+.openDataSerachBox dl dd {
+}
+.openDataSerachBox dl dd label {
+	margin: 0 5px 0 0;
+	color: #FFF;
+}
+#od_keyword {
+	padding: 0 8px;
+	width: 814px;
+	height: 35px;
+	line-height: 35px;
+	border: solid 2px #EDC;
+}
+#od_keyword:focus {
+	outline: none;
+	border-color: #EDF;
+}
+#btn_search_od_keyword {
+	width: 100px;
+	height: 35px;
+	line-height: 35px;
+	padding: 0;
+	background-color: #EDC;
+	border: none;
+	font-size: 100%;
+	font-weight: bold;
+	color: #000;
+	cursor: pointer;
+}
+#btn_search_od_keyword:hover {
+	background-color: #FDD;
+}
+.openDataExtGroup {
+	margin: 0 0 10px 0;
+}
+.openDataDate {
+}
+.openDataDate span {
+	display: inline-block;
+	margin: 0 5px 0 0;
+	padding: 2px 5px;
+	background-color: #FFC;
+	border: solid 1px #CCC;
+}

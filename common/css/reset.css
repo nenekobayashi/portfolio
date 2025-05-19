@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+/*****************************************
+              Reset Style
+*****************************************/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, legend, form, fieldset, legend, input, textarea, label, select,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+header, hgroup, main, footer, menu, nav, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font-weight: inherit;
+	font-style: normal;
+	border: 0;
+}
+article, aside, details, figcaption, figure,
+header, hgroup, main, footer, menu, nav, section {
+	display: block;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+strong,
+caption,
+th {
+	font-weight: bold;
+}
+img {
+	vertical-align: top;
+}
+ul, dl, ol { 
+	text-indent: 0;
+}
+input, textarea, select {
+	max-width: 100%;
+	box-sizing: border-box;
+	border-radius: 0;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+input[type="text"],
+input[type="password"],
+textarea {
+	padding: 8px;
+	box-sizing: border-box;
+	border: none;
+	border: solid 1px #CCC;
+}
+input[type="text"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+	background: #FFD;
+}
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button {
+	padding: 8px 12px;
+	background: #EEE;
+	border: solid 1px #CCC;
+	color: #333;
+	cursor: pointer;
+}
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+button:hover {
+	background: #F7F7F7;
+	border: solid 1px #AAA;
+}
+select {
+	padding: 8px 22px 8px 12px;
+	background: url(../img/parts/select_arw.png) 100% 50% no-repeat;
+	background-size: 16px auto;
+	background-color: #FFF;
+	box-sizing: border-box;
+	border: solid 1px #CCC;
+	color: #333;
+	cursor: pointer;
+}
+input[type="checkbox"] + label {
+	padding: 0 0 0 20px;
+	background: url(../img/parts/checkbox_off.png) 0 50% no-repeat;
+	background-size: 14px auto;
+	cursor: pointer;
+}
+input[type="checkbox"]:checked + label {
+	background: url(../img/parts/checkbox_on.png) 0 50% no-repeat;
+	background-size: 14px auto;
+}
+input[type="radio"] + label {
+	padding: 0 0 0 20px;
+	background: url(../img/parts/radio_box_off.png) 0 50% no-repeat;
+	background-size: 14px auto;
+	cursor: pointer;
+}
+input[type="radio"]:checked + label {
+	background: url(../img/parts/radio_box_on.png) 0 50% no-repeat;
+	background-size: 14px auto;
+}

@@ -1,0 +1,350 @@
+@charset "utf-8";
+
+/*****************************************
+			mainVisual
+*****************************************/
+#mainVisual {
+	width: 100%;
+}
+#mainVisual img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	max-width: 1240px;
+	margin: 0 auto;
+}
+#mainVisualContents {
+	position: relative;
+	width: 1280px;
+	max-height: 380px;
+	margin: 0 auto;
+}
+#mainVisualContents .slide {
+	max-height: 335px;
+	overflow: hidden;
+}
+#mainVisualContents .slick-arrow {
+	position: absolute;
+	z-index: 1000;
+	width: 48px;
+	height: 48px;
+	background: #FEF5F5;
+	border: 2px solid #99A9CE;
+	border-radius: 100%;
+	color: #99A9CE;
+	text-align: center;
+	line-height: 48px;
+	font-size: 120%;
+	font-weight: bold;
+	cursor: pointer;
+}
+#mainVisualContents .slick-arrow:hover {
+	background: #99A9CE;
+	border: 2px solid #FEF5F5;
+	color: #FEF5F5;
+}
+#mainVisualContents .slick-prev {
+	left: -50px;
+	top: calc(100% / 2 - 24px);
+}
+#mainVisualContents .slick-next {
+	right: -50px;
+	top: calc(100% / 2 - 24px);
+}
+#mainVisualContents ul.slick-dots {
+	text-align: center;
+	padding: 0 0 3px 0;
+}
+#mainVisualContents ul.slick-dots li {
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	margin: 0 10px;
+}
+#mainVisualContents ul.slick-dots li.slick-active button {
+	background: #99A9CE;
+	border:  2px solid #99A9CE;
+}
+#mainVisualContents ul.slick-dots li:hover button {
+	background: #99A9CE;
+	border:  2px solid #99A9CE;
+}
+#mainVisualContents ul.slick-dots li button {
+	display: block;
+	appearance: none;
+	outline: none;
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	background: #EEE;
+	border: 2px solid #CCC;
+	border-radius: 100%;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	cursor: pointer;
+}
+/*****************************************
+			Wrapper
+*****************************************/
+#wrapper {
+	padding: 0;
+}
+/*****************************************
+			main
+*****************************************/
+#main {
+	width: 100%;
+}
+#mainInner {
+	width: 1240px;
+	margin: 70px auto;
+	letter-spacing: -0.4em;
+}
+#news {
+	display: inline-block;
+	vertical-align: top;
+	width: 900px;
+	text-align: center;
+}
+#news h2 {
+	color: #1F2E55;
+	font-size: 194%;
+	font-weight: bold;
+	text-align: left;
+	letter-spacing: 0.1em;
+}
+#news h2 span {
+	display: block;
+	margin: 0 0 -8px 0;
+	color: #99A9CE;
+	font-size: 42%;
+	font-weight: bold;
+	letter-spacing: normal;
+}
+#news .newsContents {
+	height: 530px;
+	border: 3px solid #99A9CE;
+	overflow: auto;		/*スクロール*/
+	letter-spacing: normal;
+	text-align: left;
+}
+#news .newsContents dl {
+	display: block;
+	padding: 15px 15px;
+	background: url(../img/contents/news_border.png) 0 100% repeat-x;
+}
+#news .newsContents dl:last-of-type {
+	background: none;
+}
+#news .newsContents dt {
+	font-weight: bold;
+}
+#news .btnList,
+#news .btnRss {
+	display: inline-block;
+	vertical-align: top;
+	letter-spacing: normal;
+	min-width: 160px;
+	padding: 10px 40px 10px 60px;
+	margin: 20px 20px 0 0;
+	color: #FFF;
+	border-radius: 4px;
+	text-decoration: none;
+}
+#news .btnList {
+	background: url(../img/contents/btn_newslist.png) 15% 49% no-repeat #1F2E55;
+	border: 2px solid #1F2E55;
+}
+#news .btnList:hover {
+	background: url(../img/contents/btn_newslist_hover.png) 15% 50% no-repeat #FFF;
+	color: #1F2E55;
+}
+#news .btnRss {
+	background: url(../img/contents/btn_newsrss.png) 15% 50% no-repeat #9F3411;
+	border: 2px solid #9F3411;
+	margin-right: 0;
+}
+#news .btnRss:hover {
+	background: url(../img/contents/btn_newsrss_hover.png) 15% 50% no-repeat #FFF;
+	color: #9F3411;
+}
+#topLink {
+	display: inline-block;
+	vertical-align: top;
+	letter-spacing: normal;
+	width: 280px;
+	margin:  0 0 0 60px;
+}
+#topLink ul {
+	border-bottom: 2px solid #D2D2D2;
+	margin: 63px 0 0 0;
+	list-style: none;
+}
+#topLink ul li {
+	height: 75px;
+	border-top: 2px solid #D2D2D2;
+	padding: 5px 0;
+}
+#topLink ul li a {
+	display: flex;
+	align-items: center;
+	height: 100%;
+	padding: 0 0 0 88px;
+	text-decoration: none;
+	color: #444;
+	font-weight: bold;
+}
+#topLink ul li a:hover {
+	color: #D90000;
+	opacity: 0.8;
+}
+#topLink ul li:nth-of-type(1) a {
+	background: url(../img/contents/top_link01.png) 0 0 no-repeat;
+}
+#topLink ul li:nth-of-type(2) a {
+	background: url(../img/contents/top_link02.png) 0 0 no-repeat;
+}
+#topLink ul li:nth-of-type(3) a {
+	background: url(../img/contents/top_link03.png) 0 0 no-repeat;
+}
+#topLink ul li:nth-of-type(4) a {
+	background: url(../img/contents/top_link04.png) 0 0 no-repeat;
+}
+#topLink ul li:nth-of-type(5) a {
+	background: url(../img/contents/top_link05.png) 0 0 no-repeat;
+}
+#topLink ul li:nth-of-type(6) a {
+	background: url(../img/contents/top_link06.png) 0 0 no-repeat;
+}
+#topLink ul li:nth-of-type(7) a {
+	background: url(../img/contents/top_link07.png) 0 0 no-repeat;
+}
+/*****************************************
+			footer
+*****************************************/
+#footer {
+	min-height: unset;
+	margin: 0;
+}
+
+@media screen and (max-width: 640px) {
+/*****************************************
+			mainVisual
+*****************************************/
+	#mainVisual {
+		padding: 0 0 2.5vw 0;
+	}
+	#mainVisual img {
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+	#mainVisualContents {
+		position: relative;
+		width: auto;
+		max-height: 30vw;
+	}
+	#mainVisualContents .slide {
+		max-height: 30vw;
+		overflow: hidden;
+	}
+	#mainVisualContents .slick-arrow,
+	#mainVisualContents .slick-prev,
+	#mainVisualContents .slick-next,
+	#mainVisualContents ul.slick-dots {
+		display: none!important;
+	}
+/*****************************************
+			main
+*****************************************/
+	#mainInner {
+		width: auto;
+		margin: 0;
+	}
+	#news {
+		display: block;
+		width: 100%;
+	}
+	#news h2 {
+		font-size: 200%;
+		text-align: center;
+		width: 40vw;
+		margin: 0 auto 1.25vw auto;
+	}
+	#news h2 span {
+		margin: 0 0 -2.5vw 0;
+	}
+	#news .newsContents {
+		height: 98.5vw;
+		border-width: 0.9375vw;
+		border-left: none;
+		border-right: none;
+	}
+	#news .newsContents dl {
+		padding: 1.825vw 3.125vw;
+	}
+	.i_new {
+		margin: 0 0 0 3.125vw;
+		font-size: 93%;
+	}
+	#news .btnList,
+	#news .btnRss {
+		min-width: 46.25vw;
+		padding: 5vw 10vw 5vw 20vw;
+		margin: 5vw 0 0 0;
+		border-radius: 1.25vw;
+	}
+	#news .btnList {
+		background: url(../img/contents/btn_newslist.png) 10vw 50%/ 4.375vw auto no-repeat #1F2E55;
+		border: 0.625vw solid #1F2E55;
+	}
+	#news .btnList:hover {
+		background: url(../img/contents/btn_newslist_hover.png) 10vw 50%/ 4.375vw auto no-repeat #FFF;
+	}
+	#topLink {
+		display: block;
+		width: 100%;
+		margin:  10vw 0;
+	}
+	#topLink ul {
+		border-bottom: 0.625vw solid #D2D2D2;
+		margin: 0;
+	}
+	#topLink ul li {
+		height: 20vw;
+		border-top: 0.625vw solid #D2D2D2;
+		padding: 1.25vw 0;
+	}
+	#topLink ul li a {
+		padding: 0 0 0 27.5vw;
+	}
+	#topLink ul li:nth-of-type(1) a {
+		background: url(../img/contents/top_link01.png) 4.375vw 50%/ auto 17.5vw no-repeat,
+					url(../img/contents/arw_right_gray.png) 96% 50%/ auto 6.25vw no-repeat;
+	}
+	#topLink ul li:nth-of-type(2) a {
+		background: url(../img/contents/top_link02.png) 4.375vw 50%/ auto 17.5vw no-repeat,
+					url(../img/contents/arw_right_gray.png) 96% 50%/ auto 6.25vw no-repeat;
+	}
+	#topLink ul li:nth-of-type(3) a {
+		background: url(../img/contents/top_link03.png) 4.375vw 50%/ auto 17.5vw no-repeat,
+					url(../img/contents/arw_right_gray.png) 96% 50%/ auto 6.25vw no-repeat;
+	}
+	#topLink ul li:nth-of-type(4) a {
+		background: url(../img/contents/top_link04.png) 4.375vw 50%/ auto 17.5vw no-repeat,
+					url(../img/contents/arw_right_gray.png) 96% 50%/ auto 6.25vw no-repeat;
+	}
+	#topLink ul li:nth-of-type(5) a {
+		background: url(../img/contents/top_link05.png) 4.375vw 50%/ auto 17.5vw no-repeat,
+					url(../img/contents/arw_right_gray.png) 96% 50%/ auto 6.25vw no-repeat;
+	}
+	#topLink ul li:nth-of-type(6) a {
+		background: url(../img/contents/top_link06.png) 4.375vw 50%/ auto 17.5vw no-repeat,
+					url(../img/contents/arw_right_gray.png) 96% 50%/ auto 6.25vw no-repeat;
+	}
+	#topLink ul li:nth-of-type(7) a {
+		background: url(../img/contents/top_link07.png) 4.375vw 50%/ auto 17.5vw no-repeat,
+					url(../img/contents/arw_right_gray.png) 96% 50%/ auto 6.25vw no-repeat;
+	}
+}

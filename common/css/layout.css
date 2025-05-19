@@ -1,0 +1,351 @@
+@charset "UTF-8";
+
+/*****************************************
+			WYSIWYG Layout
+*****************************************/
+/* Float Left Image */
+.cFloatLeftImage {
+	margin: 0 0 25px 0;
+	overflow: hidden;
+}
+.cFloatLeftImage img {
+	margin: 0 10px 0 0;
+	max-width: 30% !important;
+	width: auto;
+	height: auto;
+	float: left;
+}
+/* Float Right Image */
+.cFloatRightImage {
+	margin: 0 0 25px 0;
+	overflow: hidden;
+}
+.cFloatRightImage img {
+	margin: 0 0 0 10px;
+	max-width: 30% !important;
+	width: auto;
+	height: auto;
+	float: right;
+}
+/* Vertical Image List */
+.cVerticalImageList {
+	overflow: hidden;
+	letter-spacing: -0.4em;
+}
+.cVerticalImageList img {
+	display: inline-block;
+	margin: 0 2.66% 25px 0;
+	width: 23%;
+	letter-spacing: normal;
+	vertical-align: top;
+}
+.cVerticalImageList a:nth-child(4n) img,
+.cVerticalImageList img:nth-child(4n) {
+	margin-right: 0;
+}
+/* Vertical Image X */
+.cVerticalImageX2,
+.cVerticalImageX3,
+.cVerticalImageX4,
+.cVerticalImageX5,
+.cVerticalImageX6,
+.cVerticalImageX7,
+.cVerticalImageX1Text,
+.cVerticalImageX2Text,
+.cVerticalImageX3Text,
+.cVerticalImageX4Text,
+.cVerticalImageX5Text,
+.cVerticalImageX6Text,
+.cVerticalImageX7Text {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 0 25px 0;
+	overflow: hidden;
+	text-align: center;
+}
+.cVerticalImageX1Text .cImageBox {
+	flex-basis: 100%;
+}
+.cVerticalImageX2 .cImageBox,
+.cVerticalImageX2Text .cImageBox {
+	width: 48.6%;
+}
+.cVerticalImageX3 .cImageBox,
+.cVerticalImageX3Text .cImageBox {
+	width: 31.6%;
+}
+.cVerticalImageX4 .cImageBox,
+.cVerticalImageX4Text .cImageBox {
+	width: 23%;
+}
+.cVerticalImageX5 .cImageBox,
+.cVerticalImageX5Text .cImageBox {
+	width: 17.8%;
+}
+.cVerticalImageX6 .cImageBox,
+.cVerticalImageX6Text .cImageBox {
+	width: 15%;
+}
+.cVerticalImageX7 .cImageBox,
+.cVerticalImageX7Text .cImageBox {
+	width: 13%;
+}
+.cVerticalImageX2 .cImageBox:last-child,
+.cVerticalImageX3 .cImageBox:last-child,
+.cVerticalImageX4 .cImageBox:last-child,
+.cVerticalImageX5 .cImageBox:last-child,
+.cVerticalImageX6 .cImageBox:last-child,
+.cVerticalImageX7 .cImageBox:last-child,
+.cVerticalImageX2Text .cImageBox:last-child,
+.cVerticalImageX3Text .cImageBox:last-child,
+.cVerticalImageX4Text .cImageBox:last-child,
+.cVerticalImageX5Text .cImageBox:last-child,
+.cVerticalImageX6Text .cImageBox:last-child,
+.cVerticalImageX7Text .cImageBox:last-child  {
+	margin-right: 0;
+}
+.cVerticalImageX2 .cImageBox img,
+.cVerticalImageX3 .cImageBox img,
+.cVerticalImageX4 .cImageBox img,
+.cVerticalImageX5 .cImageBox img,
+.cVerticalImageX6 .cImageBox img,
+.cVerticalImageX7 .cImageBox img,
+.cVerticalImageX1Text .cImageBox img,
+.cVerticalImageX2Text .cImageBox img,
+.cVerticalImageX3Text .cImageBox img,
+.cVerticalImageX4Text .cImageBox img,
+.cVerticalImageX5Text .cImageBox img,
+.cVerticalImageX6Text .cImageBox img,
+.cVerticalImageX7Text .cImageBox img {
+	max-width: 100% !important;
+	width: auto;
+	height: auto;
+}
+.cVerticalImageX1Text .cImageBox p,
+.cVerticalImageX2Text .cImageBox p,
+.cVerticalImageX3Text .cImageBox p,
+.cVerticalImageX4Text .cImageBox p,
+.cVerticalImageX5Text .cImageBox p,
+.cVerticalImageX6Text .cImageBox p,
+.cVerticalImageX7Text .cImageBox p {
+	margin: 5px 0 0 0 !important;
+}
+/* Column Layout */
+.cLayoutClm2 {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 0 25px 0;
+	overflow: hidden;
+}
+.cLayoutClm2 .clmLeft {
+	width: 49%;
+}
+.cLayoutClm2 .clmRight {
+	width: 49%;
+}
+.cLayoutClm2 .clmLeftWide {
+	width: 69%;
+}
+.cLayoutClm2 .clmRightNarrow {
+	width: 29%;
+}
+.cLayoutClm2 .clmLeftNarrow {
+	width: 29%;
+}
+.cLayoutClm2 .clmRightWide {
+	width: 69%;
+}
+.cLayoutClm3 {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 0 25px 0;
+	overflow: hidden;
+}
+.cLayoutClm3 .clmLeft {
+	width: 32%;
+}
+.cLayoutClm3 .clmCenter {
+	width: 32%;
+}
+.cLayoutClm3 .clmRight {
+	width: 32%;
+}
+/* Text Point */
+.cTextPoint {
+	padding: 0 0 0 11px;
+	background: url(../img/parts/list_point02.png) 0 8px no-repeat;
+}
+/* iframe Embed */
+.cIframeWrapper {
+	margin: 0 0 25px 0;
+	padding-top: 56.25%;
+	width: 100%;
+/*	min-height: 150px;	*/
+	position: relative;
+}
+.cIframeWrapper iframe,
+.cIframeWrapper .mce-object-iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/* Scroll Table */
+.cScrollTable {
+	overflow: auto;
+/* 	white-space: nowrap; */
+	-webkit-overflow-scrolling: touch;
+}
+/* Navigation Link */
+.cNavLink {
+	margin: 0 0 20px 0;
+	letter-spacing: -0.4em;
+}
+.cNavLink a {
+	margin: 0 15px 8px 0;
+	padding: 0 8px 2px 29px;
+	background: url(../img/parts/point_blue.png) 8px 4px no-repeat;
+	border-bottom: solid 2px #CCC;
+	display: inline-block;
+	letter-spacing: normal;
+	vertical-align: top;
+	font-weight: bold;
+	text-decoration: none;
+	color: #666 !important;
+}
+@media screen\0 {
+	.cNavLink {
+		line-height: 2.5;
+	}
+	.cNavLink a {
+		display: inline;
+		margin: 0 15px 0 0;
+		padding: 0 8px 8px 26px;
+		background-position: 3px 0;
+		vertical-align: baseline;
+	}
+}
+.cNavLink a:last-child {
+	margin-right: 0;
+}
+.cNavLink a:hover {
+	border-bottom: solid 2px #C03;
+	color: #C03 !important;
+}
+/* Button Link */
+.cBtnBlack,
+.cBtnRed,
+.cBtnBlue,
+.cBtnGreen,
+.cBtnYellow {
+	margin: 40px 0 !important;
+}
+.cBtnBlack a,
+.cBtnRed a,
+.cBtnBlue a,
+.cBtnGreen a,
+.cBtnYellow a {
+	padding: 12px;
+	background: #FFF;
+	font-weight: bold;
+	text-decoration: none;
+}
+.cBtnBlack a {
+	border: solid 2px #333;
+	color: #333 !important;
+}
+.cBtnBlack a:hover {
+	background: #333;
+	color: #FFF !important;
+}
+.cBtnRed a {
+	border: solid 2px #C03;
+	color: #C03 !important;
+}
+.cBtnRed a:hover {
+	background: #C03;
+	color: #FFF !important;
+}
+.cBtnBlue a {
+	border: solid 2px #23619F;
+	color: #23619F !important;
+}
+.cBtnBlue a:hover {
+	background: #23619F;
+	color: #FFF !important;
+}
+.cBtnGreen a {
+	border: solid 2px #1C7A2F;
+	color: #1C7A2F !important;
+}
+.cBtnGreen a:hover {
+	background: #1C7A2F;
+	color: #FFF !important;
+}
+.cBtnYellow a {
+	border: solid 2px #EED303;
+	color: #333 !important;
+}
+.cBtnYellow a:hover {
+	background: #FFFACF;
+}
+/* Boder Box */
+.cBorderBox,
+.cBorder2xBox,
+.cBorderDottedBox,
+.cBorderDotted2xBox {
+	margin: 5px 0 25px 0;
+	padding: 8px 12px;
+}
+.cBorderBox {
+	border: solid 1px #999;
+}
+.cBorder2xBox {
+	border: solid 2px #999;
+}
+.cBorderDottedBox {
+	border: dotted 1px #999;
+}
+.cBorderDotted2xBox {
+	border: dotted 2px #999;
+}
+.cBorderBox *:last-of-type,
+.cBorder2xBox *:last-of-type,
+.cBorderDottedBox *:last-of-type,
+.cBorderDotted2xBox *:last-of-type {
+	margin-top: 0 !important;
+	margin-bottom: 0 !important;
+}
+/* Summary Accordion */
+.cSummaryAccordion {
+	margin: 0 0 15px 0;
+	border: 1px solid #CCC;
+	transition: 0.2s;
+}
+.cSummaryAccordion details {
+	padding: 0 10px;
+}
+.cSummaryAccordion details summary {
+	background: #EEE;
+	margin: 0 -10px;
+	padding: 8px 12px;
+	font-weight: bold;
+	cursor: pointer;
+}
+.cSummaryAccordion details[open] summary {
+	margin-bottom: 15px;
+}
+#contents .cSummaryAccordion h2,
+#contents .cSummaryAccordion h3,
+#contents .cSummaryAccordion h4,
+#contents .cSummaryAccordion h5,
+#contents .cSummaryAccordion h6,
+.contentsCalendar .cSummaryAccordion h2,
+.contentsCalendar .cSummaryAccordion h3,
+.contentsCalendar .cSummaryAccordion h4,
+.contentsCalendar .cSummaryAccordion h5,
+.contentsCalendar .cSummaryAccordion h6 {
+	margin-left: 0;
+	margin-right: 0;
+}
